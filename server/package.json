@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-jwt": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0",
+    "serve": "^11.3.2",
+    "stripe": "^8.144.0"
+  },
+  "scripts": {
+    "start": "node -r esm server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": "\"server side of my project\"",
+  "main": "server.js",
+  "author": "Parag Pramod Roy",
+  "license": "ISC"
+}
